@@ -1,0 +1,179 @@
+
+
+/*  Home section styles */
+
+
+.BodySection{
+    background-color: #010313;
+    height: 100vh;   /* Screen er full height pabe*/
+    background-image: url('images/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.HomeSection div{
+   /* border: 1px solid white; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+   height: 100vh;  /* height 100vh na korle div ta choto tahke and lekhagulo screen er majhe jete parena div er height er jonno*/
+   display: none;
+}
+.HomeSection h1{
+    color: white;
+    font-size: 7em;
+    text-transform: uppercase;
+}
+.HomeSection p{
+    color: white;
+    font-size:xx-large;
+    margin-top: -2.5em;
+}
+.HomeSection div button{
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+
+
+
+
+/* Plying section styles */
+
+
+
+
+
+.PlayingSection{
+    display:none;
+}
+
+.PlayingOuterDiv{
+    /* border: 1px solid white; */
+    height: 100vh;
+}
+.Display{
+    border: 15px solid rgba(0, 0, 0, 0.712);
+    height: 300px;
+    width: 800px;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 0.692);
+    border-radius: 10px;
+}
+.Keyboard{
+    /* border: 1px solid white; */
+}
+.EachLine{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 9px;
+}
+.EachLine kbd{
+    background-color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 9px;
+}
+.kbd{
+    font-size:x-large;
+}
+
+
+.LikeShareButton{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 250px;
+}
+#LifeButton{
+    width: 150px;
+    height: 50px;
+    background-color: #894189;
+    color: white;
+    font-size: larger;
+    border-radius: 20px;
+    padding-right: 60px;
+}
+#ScoreButton{
+    width: 150px;
+    height: 50px;
+    background-color: #360490;
+    color: white;
+    font-size: larger;
+    border-radius: 20px;
+    padding-right: 60px;
+}
+.LikeShareButton div{
+    /* border: 1px solid white; */
+}
+#HeartImg, #DollarImg{
+  width: 22px;
+  height:22px;
+
+  position: relative;
+  right: 70px;
+  top: 5px;
+}
+.LikeShareButton p{
+    color: white;
+    position: relative;
+    bottom: 57px;
+    left: 120px;
+    font-size: 20px;
+}
+
+
+
+
+/*  Score display section styles */
+
+.ScoreDisplaySection{
+    display: none;
+}
+.ScoreBoardOuter{
+    border: 1px solid white;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ScoreBoardInner{
+    /* border: 1px solid white; */
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.20);
+    border-radius: 20px;
+
+}
+.ScoreBoardInner h1{
+   color: white;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-weight: 700;
+   font-size: 4em;
+}
+.ScoreBoardInner button{
+    width: 170px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: x-large;
+    font-weight: 700;
+}
+.ScoreBoardInner p{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+}
