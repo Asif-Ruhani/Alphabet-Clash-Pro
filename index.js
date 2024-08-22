@@ -21,6 +21,11 @@ function ContinueGame(){
 }
 
 
+function RemovePressedAlphabetBgColor(ID){
+   const bgcolor=document.getElementById(ID);
+   bgcolor.classList.remove('SetAlphabetBgColor');  // je button already correctly pressed hoyeche setar bg color remove kore dibe
+}
+
 document.addEventListener('keyup', function(event){
    // console.log(event.key);    // kon key ta press korlam seta jante parbo "parameter.key" dile
    const PressedKey=event.key.toLocaleUpperCase();
@@ -31,8 +36,10 @@ document.addEventListener('keyup', function(event){
 
    if(getRandomAlphabet==PressedKey){
       // console.log('Right');
+      RemovePressedAlphabetBgColor(PressedKey.toLocaleLowerCase());
       Score+=1;
       console.log('Score: ',Score);
+      ContinueGame();
    }
    else{
       // console.log('Wrong');
