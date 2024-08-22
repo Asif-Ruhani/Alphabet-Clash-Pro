@@ -10,6 +10,9 @@ let Score=0;
 
 
 
+
+
+
 function ScoreSection(){
      
    const totalScore=ScoreIncrement();
@@ -147,5 +150,22 @@ function EnterPlaySection(){
     ContinueGame();
    
 
+}
+
+
+
+
+
+
+function PlayAgain(){
+
+   const PlayGround=document.getElementById('ScoreScreen');
+   PlayGround.classList.add('DisplayHidden');
+
+
+   const ScoreBoard=document.getElementById('PlayGround');
+   ScoreBoard.classList.remove('DisplayHidden');
+
+   ContinueGame();
 }
 
