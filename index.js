@@ -1,20 +1,48 @@
 
+let LifeLine=3;
+let Score=0;
+
+ 
 function ContinueGame(){
-   const AlphabetString='abcdefghijklmnopqrstuvwxyz';
+   const AlphabetString='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
    const Alphabets=AlphabetString.split('');
 
    const Random=Math.round(Math.random()*25);   // 26 letter, 0-25
    const Alphabet=Alphabets[Random];
 
-   const displayAlphabet=document.getElementById('RandomAlphabet');
-   displayAlphabet.innerText=Alphabet;
-   console.log(Alphabet);
-
-   const AlphabetBgColor=document.getElementById(Alphabet);   // if we write ('Alphabet') with single quation, then it will not work.
+   const displayRandomAlphabet=document.getElementById('RandomAlphabet');
+   displayRandomAlphabet.innerText=Alphabet;
+   // console.log(Alphabet);
+    const alphabet=Alphabet.toLocaleLowerCase();
+    const AlphabetBgColor=document.getElementById(alphabet);
    // console.log(AlphabetBgColor);
    AlphabetBgColor.classList.add('SetAlphabetBgColor');
-   console.log(AlphabetBgColor);
+   // console.log(AlphabetBgColor);
 }
+
+
+document.addEventListener('keyup', function(event){
+   // console.log(event.key);    // kon key ta press korlam seta jante parbo "parameter.key" dile
+   const PressedKey=event.key.toLocaleUpperCase();
+
+   const getRandomAlphabet=document.getElementById('RandomAlphabet').innerText;
+   console.log('Random alphabet: ',getRandomAlphabet);
+   console.log('Your have pressed: ',PressedKey);
+
+   if(getRandomAlphabet==PressedKey){
+      // console.log('Right');
+      Score+=1;
+      console.log('Score: ',Score);
+   }
+   else{
+      // console.log('Wrong');
+      LifeLine-=1;
+      console.log('Life line: ',LifeLine);
+   }
+
+});   
+
+
 
 function EnterPlaySection(){
   
@@ -26,6 +54,7 @@ function EnterPlaySection(){
     PlayGround.classList.remove('DisplayHidden');
 
     ContinueGame();
+   
 
 }
 

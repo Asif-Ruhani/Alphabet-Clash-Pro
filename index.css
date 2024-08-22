@@ -74,7 +74,7 @@
     justify-content: center;
     margin-bottom: 9px;
 }
-.EachLine kbd{
+.kbd{
     background-color: white;
     width: 55px;
     height: 55px;
@@ -83,12 +83,9 @@
     justify-content: center;
     align-items: center;
     margin-left: 9px;
-}
-.kbd{
     font-size:x-large;
+    text-transform: uppercase;
 }
-
-
 .LikeShareButton{
     /* border: 1px solid white; */
     display: flex;
@@ -141,7 +138,7 @@
 }
 
 .SetAlphabetBgColor{
-    background-color: blue;
+    background-color: orangered;
 }
 
 
