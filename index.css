@@ -151,7 +151,7 @@
 
 
 .ScoreBoardOuter{
-    /* border: 1px solid white; */
+    border: 1px solid white;
     height: 100vh;
 
     display: flex;
@@ -160,7 +160,7 @@
     align-items: center;
 }
 .ScoreBoardInner{
-    /* border: 1px solid white; */
+    border: 1px solid white;
     width: 500px;
 
     display: flex;
@@ -172,11 +172,13 @@
 
 }
 .ScoreBoardInner h1{
-   color: white;
+   /* border: 1px solid white; */
+    color: white;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    font-weight: 700;
    font-size: 4em;
 }
+
 .ScoreBoardInner button{
     width: 170px;
     height: 60px;
