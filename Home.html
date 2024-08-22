@@ -5,18 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Section</title>
     <link rel="stylesheet" href="index.css">
+    
 </head>
 <body class="BodySection">
-    <section id="HomeScreen" class="HomeSection">
+
+
+    <section id="SomeScreen" class="HomeSection">
         <div>
             <h1>Alphabet Clash</h1>
             <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-            <button onclick="PlayNow()">Play Now</button>
+            <button onclick="EnterPlaySection()">Play Now</button>
         </div>
 
     </section>
 
 
+
+    
+
+
+    <section id="PlayGround" class="PlayingSection DisplayHidden">
+
+        <div class="PlayingOuterDiv">
+            <div class="Display">
+                <h1 id="RandomAlphabet"></h1>
+            </div>
+            <div class="Keyboard">
+                <div class="EachLine">
+                    <kbd id="q" class="kbd">q</kbd>
+                    <kbd id="w" class="kbd">w</kbd>
+                    <kbd id="e" class="kbd">e</kbd>
+                    <kbd id="r" class="kbd">r</kbd>
+                    <kbd id="t" class="kbd">t</kbd>
+                    <kbd id="y" class="kbd">y</kbd>
+                    <kbd id="u" class="kbd">u</kbd>
+                    <kbd id="i" class="kbd">i</kbd>
+                    <kbd id="o" class="kbd">o</kbd>
+                    <kbd id="p" class="kbd">p</kbd>
+                  </div>
+                  <div class="EachLine">
+                    <kbd id="a" class="kbd">a</kbd>
+                    <kbd id="s" class="kbd">s</kbd>
+                    <kbd id="d" class="kbd">d</kbd>
+                    <kbd id="f" class="kbd">f</kbd>
+                    <kbd id="g" class="kbd">g</kbd>
+                    <kbd id="h" class="kbd">h</kbd>
+                    <kbd id="j" class="kbd">j</kbd>
+                    <kbd id="k" class="kbd">k</kbd>
+                    <kbd id="l" class="kbd">l</kbd>
+                  </div>
+                  <div class="EachLine">
+                    <kbd id="z" class="kbd">z</kbd>
+                    <kbd id="x" class="kbd">x</kbd>
+                    <kbd id="c" class="kbd">c</kbd>
+                    <kbd id="v" class="kbd">v</kbd>
+                    <kbd id="b" class="kbd">b</kbd>
+                    <kbd id="n" class="kbd">n</kbd>
+                    <kbd id="m" class="kbd">m</kbd>
+                    <kbd id="/" class="kbd">/</kbd>
+                  </div>
+
+            </div>
+
+
+            <div class="LikeShareButton">
+                 
+              <div>
+                <button id="LifeButton">Life</button>
+                <img id="HeartImg" src="images/Heart.png" alt="">
+                <p id="LifeRemain">1</p>
+              </div>
+
+              <div>
+                <button id="ScoreButton">Score</button>
+                <img id="DollarImg" src="images/Dollar.png" alt="">
+                <p id="TotalScore">1</p>
+              </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <section id="ScoreScreen" class="ScoreDisplaySection DisplayHidden">
+
+        <div class="ScoreBoardOuter">
+            <div class="ScoreBoardInner">
+                <h1>Score: <span>14</span></h1>
+                <button onclick="PlayNow()">Play Now</button>
+                <p>Practice will make you Pro</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <script src="Functions.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

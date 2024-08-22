@@ -1,5 +1,9 @@
 
 
+
+.DisplayHidden{
+    display: none;
+}
 /*  Home section styles */
 
 .BodySection{
@@ -30,10 +34,13 @@
     margin-top: -2.5em;
 }
 .HomeSection div button{
-    height: 50px;
-    width: 120px;
+    height: 60px;
+    width: 150px;
     border-radius: 10px;
     font-weight: 700;
+}
+.HomeSection button a{
+    text-decoration: none;
 }
 
 
@@ -125,6 +132,18 @@
     font-size: 20px;
 }
 
+#RandomAlphabet{
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+   margin: 100px auto;
+}
+
+.SetAlphabetBgColor{
+    background-color: blue;
+}
+
 
 
 
@@ -135,7 +154,7 @@
 
 
 .ScoreBoardOuter{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     height: 100vh;
 
     display: flex;
@@ -172,4 +191,7 @@
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: x-large;
+}
+.ScoreBoardInner button a{
+    text-decoration: none;
 }
