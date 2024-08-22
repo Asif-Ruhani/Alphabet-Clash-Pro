@@ -2,7 +2,6 @@
 
 /*  Home section styles */
 
-
 .BodySection{
     background-color: #010313;
     height: 100vh;   /* Screen er full height pabe*/
@@ -19,7 +18,6 @@
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
    height: 100vh;  /* height 100vh na korle div ta choto tahke and lekhagulo screen er majhe jete parena div er height er jonno*/
-   display: none;
 }
 .HomeSection h1{
     color: white;
@@ -48,9 +46,6 @@
 
 
 
-.PlayingSection{
-    display:none;
-}
 
 .PlayingOuterDiv{
     /* border: 1px solid white; */
@@ -135,9 +130,10 @@
 
 /*  Score display section styles */
 
-.ScoreDisplaySection{
-    display: none;
-}
+
+
+
+
 .ScoreBoardOuter{
     border: 1px solid white;
     height: 100vh;
