@@ -8,42 +8,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 function RemovePressedAlphabetBgColor(ID){
    const bgcolor=document.getElementById(ID);
    bgcolor.classList.remove('SetAlphabetBgColor');  // je button already correctly pressed hoyeche setar bg color remove kore dibe
 }
-
-
-
-
-
-
-
-// function ScoreIncrement(){
-   
-//    return Score;
-// }
-
-
-
-
-// function ScoreSection(){
-     
-//    const totalScore=ScoreIncrement();
-   
-//    const scoreBoard=document.getElementById('TotalScore');
-//    scoreBoard.value=totalScore;
-// }
 
 
 
@@ -63,13 +31,6 @@ function EnterScoreSection(){
 }
 
 
-
-
-
-
-// function LifeLineDecrement(){
-  
-// }
   
 
 
@@ -95,12 +56,16 @@ function ContinueGame(){
 }
 
 
+
+
+
+
 function SetLifeAndScore(){
    LifeLine=5;
    const life=document.getElementById('LifeRemain');
    life.innerText=LifeLine;
    Score=0;
-   const CurrentScore=document.getElementById('TotalScore');
+   const CurrentScore=document.getElementById('CurrentScore');
    CurrentScore.innerText=Score;
 }
 
@@ -140,6 +105,8 @@ document.addEventListener('keyup', function(event){
       // console.log('Right');
       RemovePressedAlphabetBgColor(getRandomAlphabet.toLocaleLowerCase());
       Score+=1;
+      const PresentScore=document.getElementById('CurrentScore');
+      PresentScore.innerText=Score;
       ContinueGame();
    }
    else{
@@ -149,6 +116,10 @@ document.addEventListener('keyup', function(event){
 
       if(LifeLine==0){
          RemovePressedAlphabetBgColor(getRandomAlphabet.toLocaleLowerCase());  // lifeline 0 hole je alphabet ta color hoyechilo setar color remove kore dibe, remove na korle pore abar khelte asle oi color ta age thekei roye jabe.
+
+         const FinalScore=this.getElementById('FinalScore');
+         FinalScore.innerText=Score;
+         // FinalScore.textContent=Score;  // innertext & textContent both can be used here
          EnterScoreSection();
       }
    }
