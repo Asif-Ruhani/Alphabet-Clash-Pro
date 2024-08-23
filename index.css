@@ -34,14 +34,13 @@
     margin-top: -2.5em;
 }
 .HomeSection div button{
-    height: 60px;
-    width: 150px;
+    height: 70px;
+    width: 200px;
     border-radius: 10px;
     font-weight: 700;
+    font-size: 1.2em;
 }
-.HomeSection button a{
-    text-decoration: none;
-}
+
 
 
 
@@ -172,11 +171,19 @@
 
 }
 .ScoreBoardInner h1{
-   /* border: 1px solid white; */
     color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+    margin-bottom: -30px;
+}
+.ScoreBoardInner h2{
+   /* border: 1px solid white; */
+   color: white;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    font-weight: 700;
    font-size: 4em;
+   margin-bottom: 20px;
 }
 
 .ScoreBoardInner button{
